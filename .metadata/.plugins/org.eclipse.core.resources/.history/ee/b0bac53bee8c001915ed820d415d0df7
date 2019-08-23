@@ -1,0 +1,52 @@
+package com.practice.testng;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class DataproviderTest {
+
+	WebDriver driver;
+	@DataProvider(name="login")
+	public Object[][] getLogin(){
+		return new Object[][]
+		{
+			{"jshah", "pwd"},
+			{"mercury", "mercury"}
+		};
+
+	}	
+		
+	@BeforeTest
+	public void setup(){
+		System.setProperty("webdriver.gecko.driver", "C:\\Selenium browser drivers\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+	}
+	
+	@Test(dataProvider="login")
+	public void testLogin(String username, String password) throws InterruptedException{
+		driver.get("http://www.newtours.demoaut.com/");
+		Thread.sleep(3000);
+		
+		
+		driver.findElement(By.name("userName")).sendKeys("jshah");
+		Thread.sleep(3000);
+		driver.findElement(By.name("password")).sendKeys("pwd");
+		Thread.sleep(3000);
+		driver.findElement(By.name("login")).click();
+		Thread.sleep(5000);
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.close();
+	}
+}

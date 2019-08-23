@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="66851" started-at="2019-06-12T10:06:36Z" finished-at="2019-06-12T10:07:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="66851" started-at="2019-06-12T10:06:36Z" finished-at="2019-06-12T10:07:43Z">
+      <class name="com.practice.testng.DataproviderTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.practice.testng.DataproviderTest@d2cc05a]" name="setup" is-config="true" duration-ms="5778" started-at="2019-06-12T10:06:36Z" finished-at="2019-06-12T10:06:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.practice.testng.DataproviderTest@d2cc05a]" name="testLogin" duration-ms="15678" started-at="2019-06-12T10:06:42Z" data-provider="login" finished-at="2019-06-12T10:06:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.practice.testng.DataproviderTest@d2cc05a]" name="testLogin" duration-ms="14656" started-at="2019-06-12T10:06:57Z" data-provider="login" finished-at="2019-06-12T10:07:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Microsoft]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.practice.testng.DataproviderTest@d2cc05a]" name="testLogin" duration-ms="14550" started-at="2019-06-12T10:07:12Z" data-provider="login" finished-at="2019-06-12T10:07:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amazon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:com.practice.testng.DataproviderTest@d2cc05a]" name="testLogin" duration-ms="13977" started-at="2019-06-12T10:07:27Z" data-provider="login" finished-at="2019-06-12T10:07:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Flipkart]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.practice.testng.DataproviderTest@d2cc05a]" name="tearDown" is-config="true" duration-ms="2174" started-at="2019-06-12T10:07:41Z" finished-at="2019-06-12T10:07:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.practice.testng.DataproviderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

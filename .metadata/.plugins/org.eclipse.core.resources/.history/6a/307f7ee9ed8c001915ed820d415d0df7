@@ -1,0 +1,17 @@
+package com.practice.testng;
+
+import org.testng.annotations.DataProvider;
+
+public class DataproviderTest {
+
+	
+	@DataProvider(name="login")
+	public Object[][] getLogin(){
+		return new Object[][]
+		{
+			{"jshah", "pwd"},
+			{"mercury", "mercury"}
+		};
+
+	}
+}
